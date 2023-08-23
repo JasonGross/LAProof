@@ -333,7 +333,7 @@ apply ler_pmul => //.
 apply normM_pos.
 apply normv_pos.
 rewrite /normM mulrC big_max_mul.
-apply le_bigmax2 => i0 _.
+apply: le_bigmax2 => i0 _.
 rewrite /sum_abs.
 rewrite big_mul =>  [ | i b | ]; try ring.
 apply ler_sum => i _.
